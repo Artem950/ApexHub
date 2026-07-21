@@ -8,7 +8,7 @@ local camera = workspace.CurrentCamera
 -- Состояние полета
 local flying = false
 local flySpeed = 50
-local maxSpeed = 300
+local maxSpeed = 5000
 
 -- Таблица для отслеживания зажатых клавиш
 local keys = {W = false, S = false, A = false, D = false, Space = false, LeftShift = false}
@@ -87,7 +87,7 @@ PlusButton.Size = UDim2.new(0, 100, 0, 30)
 PlusButton.Position = UDim2.new(0, 130, 0, 130)
 PlusButton.BackgroundColor3 = Color3.fromRGB(44, 44, 46)
 PlusButton.Font = Enum.Font.GothamBold
-PlusButton.Text = "+10"
+PlusButton.Text = "+250"
 PlusButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 PlusButton.TextSize = 14
 PlusButton.Parent = MainFrame
