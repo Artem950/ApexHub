@@ -176,7 +176,7 @@ end)
 
 PlusButton.MouseButton1Click:Connect(function()
     if flySpeed < maxSpeed then
-        flySpeed = flySpeed + 250
+        flySpeed = math.min(flySpeed + 250, maxSpeed)
         SpeedLabel.Text = "Скорость: " .. flySpeed
     end
 end)
